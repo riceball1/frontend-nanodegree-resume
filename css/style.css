@@ -11,7 +11,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Slabo 27px", sans-serif;
 }
 
 .clear-fix {
@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #66b2b2;
   line-height: 48px;
   display: inline;
 }
@@ -54,13 +54,14 @@ h4 {
 }
 
 h2,
-h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
 
+h3 {
+  padding: 10px 0;
+}
 
 .date-text {
   font-style: italic;
@@ -76,6 +77,7 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
+  text-transform: uppercase;
 
 }
 
@@ -86,7 +88,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #66b2b2;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -100,16 +102,17 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #66b2b2;
   display: none;
 }
 
-.orange {
-  background-color: #f5ae23;
+.teal {
+  background-color: #66b2b2;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #66b2b2;
+  padding: 5px;
 }
 
 .white-text {
@@ -130,6 +133,10 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+}
+
+#name {
+  font-size: 3em;
 }
 
 .flex-box {
@@ -165,14 +172,46 @@ ul {
 
 img {
   padding: 10px;
+  width: 40%;
+  height: auto;
+}
+
+.project-entry img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  filter: grayscale(100%);
 }
 
 span {
-  padding: 5px;
+  padding: 10px;
 }
+
 
 #lets-connect {
   text-align: center;
+}
+
+#lets-connect h2 {
+  padding: 10px;
+}
+
+
+/* Custom CSS */
+
+.role {
+  color: white;
+  display: block;
+}
+
+#workExperience, 
+#projects,
+#education,
+#mapDiv {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.teal {
+  color: white;
 }
 
 /* Media queries to handle various device widths */
