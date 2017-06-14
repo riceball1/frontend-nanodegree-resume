@@ -2,6 +2,7 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 
+"use strict";
 
 var bio = {
     name: 'Dana Ng',
@@ -169,7 +170,6 @@ var projects = {
     }],
     display() {
 
-
         // iterate over each project
         if (this.projects.length > 0) {
             this.projects.forEach(function(project) {
@@ -186,7 +186,7 @@ var projects = {
             });
         }
     }
-}
+};
 
 // Display Data
 bio.display();
