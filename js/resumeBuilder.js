@@ -2,7 +2,6 @@
 This is empty on purpose! Your code to build the resume will go here.
  */
 
-"use strict";
 
 var bio = {
     name: 'Dana Ng',
