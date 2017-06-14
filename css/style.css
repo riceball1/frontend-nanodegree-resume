@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 div,
 ul,
@@ -11,7 +15,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Slabo 27px", sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 .clear-fix {
@@ -28,7 +32,6 @@ h1 {
   font-size: 40px;
   color: #66b2b2;
   line-height: 48px;
-  display: inline;
 }
 
 h2 {
@@ -99,18 +102,20 @@ a {
   font-size: 18px;
   color: #f3f3f3;
   line-height: 28px;
+  display: block;
+  text-align: center;
 }
 
 #skills-h3 {
   color: #66b2b2;
-  display: none;
+  text-align: center;
 }
 
 .teal {
   background-color: #66b2b2;
 }
 
-.orange-text {
+.teal-text {
   color: #66b2b2;
   padding: 5px;
 }
@@ -164,21 +169,26 @@ ul {
 }
 
 .biopic {
-  float: left;
+  filter: grayscale(100%);
+  margin: 0 auto;
   padding: 10px;
   width: 200px;
   display: none;
 }
 
-img {
-  padding: 10px;
-  width: 40%;
+.project-img {
+  margin: 20px auto;
+  width: 80%;
   height: auto;
-}
-
-.project-entry img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   filter: grayscale(100%);
+}
+
+.project-entry {
+  margin: 0;
+  padding: 5%;
+  width: 33%;
+  float: left;
 }
 
 span {
@@ -212,6 +222,11 @@ span {
 
 .teal {
   color: white;
+}
+
+
+#name, .role {
+  text-align: center;
 }
 
 /* Media queries to handle various device widths */

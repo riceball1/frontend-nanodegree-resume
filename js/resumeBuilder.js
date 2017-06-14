@@ -139,12 +139,12 @@ This is empty on purpose! Your code to build the resume will go here.
  		}
  	],
  	display() {
- 		// initiate work div
- 		$("#workExperience").append(HTMLworkStart);
 
  		// interate over work experiences
  		if(this.jobs.length > 0) {
  			this.jobs.forEach(function(work) {
+ 				// add div for each work experience
+ 		$("#workExperience").append(HTMLworkStart);
 	 			// formatted data
 	 			var formattedTitle = HTMLworkTitle.replace("%data%", work.title);
 	 			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.employer);
@@ -153,7 +153,7 @@ This is empty on purpose! Your code to build the resume will go here.
 	 			var formattedDescription = HTMLworkDescription.replace("%data%", work.description);
 
 	 			// append data to html dom
-	 			$(".work-entry").append(formattedEmployer + formattedTitle, formattedDates, formattedLocation, formattedDescription);
+	 			$(".work-entry:last").append(formattedEmployer + formattedTitle, formattedDates, formattedLocation, formattedDescription);
 	 		});
  		}
  	}
@@ -181,12 +181,13 @@ This is empty on purpose! Your code to build the resume will go here.
  		}
  	],
  	display() {
- 		// initate the project div
- 		$("#projects").append(HTMLprojectStart);
+ 		
 
  		// iterate over each project
  		if(this.projects.length > 0) {
  			this.projects.forEach(function(project) {
+ 				// add div for each project-entry
+ 				$("#projects").append(HTMLprojectStart);
 	 			// formatted data
 	 			var formattedprojectTitle = HTMLprojectTitle.replace("%data%", project.title);
 	 			var formattedprojectDates = HTMLprojectDates.replace("%data%", project.dates);
@@ -194,7 +195,7 @@ This is empty on purpose! Your code to build the resume will go here.
 	 			var formattedprojectImage = HTMLprojectImage.replace("%data%", project.images);
 
 	 			// append data to html dom
-	 			$(".project-entry").append(formattedprojectTitle, formattedprojectDates, formattedprojectDescription, formattedprojectImage);
+	 			$(".project-entry:last").append(formattedprojectTitle, formattedprojectDates, formattedprojectDescription, formattedprojectImage);
 	 		});
  		}
  	}
